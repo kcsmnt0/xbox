@@ -1,0 +1,11 @@
+flags: {}
+packages:
+- .
+extra-deps:
+- brick-0.47
+- config-ini-0.2.4.0
+- data-clist-0.1.2.2
+- text-zipper-0.10.1
+- word-wrap-0.4.1
+- flac-0.2.0@sha256:88546dad06c27c399041511b66f33b269f7a49057c6d801411fc2da4bc6d1cde
+resolver: lts-13.26

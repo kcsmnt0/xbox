@@ -1,0 +1,73 @@
+name:                xbox
+version:             0.1.0.0
+homepage:            https://github.com/kcsmnt0/xbox#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Katie Casamento
+maintainer:          kcsmnt0@gmail.com
+copyright:           Katie Casamento
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable xbox
+  hs-source-dirs: src
+  main-is: Main.hs
+  default-language: Haskell2010
+
+  ghc-options:
+    -fwarn-incomplete-patterns
+    -fwarn-incomplete-uni-patterns
+    -fwarn-incomplete-record-updates
+    -fwarn-redundant-constraints
+    -Wno-partial-type-signatures
+    -fdefer-typed-holes
+    -threaded
+
+  other-modules:
+    Xbox.Config
+    Xbox.FileSystem
+    Xbox.Library
+    Xbox.Playback
+    Xbox.Util
+
+  build-depends:
+    ALUT,
+    appendmap,
+    base >= 4.7 && < 5,
+    brick,
+    bytestring,
+    cereal,
+    cereal-text,
+    containers,
+    directory,
+    filepath,
+    htaglib,
+    lens-simple,
+    mtl,
+    OpenAL,
+    process,
+    StateVar,
+    text,
+    time,
+    transformers,
+    tree-diff,
+    vector,
+    vty
+
+  default-extensions:
+    BlockArguments
+    DeriveAnyClass
+    DeriveFoldable
+    DeriveFunctor
+    DeriveGeneric
+    DeriveTraversable
+    LambdaCase
+    OverloadedStrings
+    QuantifiedConstraints
+    RankNTypes
+    ScopedTypeVariables
+    StandaloneDeriving
+    TemplateHaskell
+    TupleSections
